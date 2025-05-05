@@ -9,8 +9,12 @@ import React from "react";
 import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
 const imageAltText = "arrow pointing downwards";
+
+import websiteImage from "../images/website.jpg";
+const websiteImageAltText = "website image";
 /**
  * Home background image
+ * 
  *
  * Below is a sample image. Upload the image of your choice into the "images"
  // eslint-disable-next-line prettier/prettier
@@ -29,9 +33,12 @@ const Home = ({ name, title }) => {
         <h1>{name}</h1>
         <h2>{title}</h2>
       </div>
-      <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
-        <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
-      </div>
+      <>
+        <img src={websiteImage} alt={websiteImageAltText} className="background" />
+        <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
+          <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
+        </div>
+      </>
     </section>
   );
 };
