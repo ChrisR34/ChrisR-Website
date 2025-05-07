@@ -18,7 +18,7 @@ import React from "react";
  */
 import image from "../images/motion-background.jpg";
 // You'll need to import your computer image here
-import computerImage from "../images/computer-image.jpg"; // Update this path to your actual computer image
+import computerImage from "../images/computer.jpg"; // Update this path to your actual computer image
 
 const imageAltText = "purple and blue abstract background";
 const computerAltText = "computer workstation"; // Update this to describe your computer image
