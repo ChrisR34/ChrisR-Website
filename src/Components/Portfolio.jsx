@@ -28,11 +28,15 @@ import React from "react";
  */
 const projectList = [
   {
-    title: "My Resume Site",
+    title: "My Portfolio Site",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
+      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my abilities and skills.",
     url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
   },
+  {
+    title: "Empty",
+    description: "This is a placeholder for future projects.",
+  }
 ];
 
 const Portfolio = () => {
