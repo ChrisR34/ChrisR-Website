@@ -10,7 +10,7 @@ import React from "react";
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use Then, set imageAltText to string that.
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -24,7 +24,7 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I am a web designer and software engineer to be currently studying at Kingston University in the UK. I am passionate about solving problems in new creative ways to drive innovation.I continually look for new and better ways to make tech accessible by all.";
+  "I am a web designer and software engineer to be currently studying at Kingston University in the UK. I am passionate about solving problems in new creative ways to drive innovation. I continually look for new and better ways to make tech accessible by all.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
@@ -45,42 +45,35 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. ";
+  "I am passionate about solving problems in new creative ways to drive innovation.";
 
 const About = () => {
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
-      <div
-        style={{
-          backgroundColor: "white",
-          width: "50%",
-          padding: "4rem",
-          margin: "3rem auto",
-          textAlign: "center",
-        }}
-      >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
-        <hr />
-        <ul
-          style={{
-            textAlign: "left",
-            columns: 2,
-            fontSize: "1.25rem",
-            margin: "2rem 3rem",
-            gap: "3rem",
-          }}
-        >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
-          ))}
-        </ul>
-        <hr />
-        <p style={{ padding: "1rem 3rem 0" }}>{detailOrQuote}</p>
+      <div className="container">
+        <div className="content-card">
+          <h2>About Myself</h2>
+          <p className="large">{description}</p>
+          <hr />
+          <ul className="skills-list">
+            {skillsList.map((skill) => (
+              <li key={skill}>{skill}</li>
+            ))}
+          </ul>
+          <hr />
+          <p className="quote">{detailOrQuote}</p>
+        </div>
       </div>
     </section>
   );
 };
 
 export default About;
+// Compare this snippet from src/Components/Footer.jsx:
+// /**
+//  * Footer component
+//  *
+//  * The footer of your site. This is a great place to add links to your
+//  * social media, GitHub, or other sites.
+//  *

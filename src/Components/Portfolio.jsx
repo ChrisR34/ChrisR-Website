@@ -36,7 +36,7 @@ const projectList = [
   {
     title: "Empty",
     description: "This is a placeholder for future projects.",
-  }
+  },
 ];
 
 const Portfolio = () => {
