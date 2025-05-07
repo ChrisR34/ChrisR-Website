@@ -10,9 +10,6 @@ import arrowSvg from "../images/down-arrow.svg";
 import PropTypes from "prop-types";
 const imageAltText = "arrow pointing downwards";
 
-import computer from "../images/computer.jpg";
-const computerImageAltText = "computer image";
-
 import websiteImage from "../images/website.jpg";
 const websiteImageAltText = "website image";
 /**
@@ -37,7 +34,6 @@ const Home = ({ name, title }) => {
         <h2>{title}</h2>
       </div>
       <>
-        <img src={computer} alt={computerImageAltText} />
         <img src={websiteImage} alt={websiteImageAltText} className="background" />
         <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
           <img src={arrowSvg} style={{ height: "3rem", width: "3rem" }} alt={imageAltText} />
