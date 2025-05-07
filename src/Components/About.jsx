@@ -17,8 +17,11 @@ import React from "react";
  * freely use on your site.
  */
 import image from "../images/motion-background.jpg";
+// You'll need to import your computer image here
+import computerImage from "../images/computer-image.jpg"; // Update this path to your actual computer image
 
 const imageAltText = "purple and blue abstract background";
+const computerAltText = "computer workstation"; // Update this to describe your computer image
 
 /**
  * Sort description that expands on your title on the Home component.
@@ -51,18 +54,23 @@ const About = () => {
   return (
     <section className="padding" id="about">
       <img className="background" src={image} alt={imageAltText} />
-      <div className="container">
-        <div className="content-card">
-          <h2>About Myself</h2>
-          <p className="large">{description}</p>
-          <hr />
-          <ul className="skills-list">
-            {skillsList.map((skill) => (
-              <li key={skill}>{skill}</li>
-            ))}
-          </ul>
-          <hr />
-          <p className="quote">{detailOrQuote}</p>
+      <div className="about-layout">
+        <div className="computer-container">
+          <img className="computer-image" src={computerImage} alt={computerAltText} />
+        </div>
+        <div className="content-container">
+          <div className="content-card">
+            <h2>About Myself</h2>
+            <p className="large">{description}</p>
+            <hr />
+            <ul className="skills-list">
+              {skillsList.map((skill) => (
+                <li key={skill}>{skill}</li>
+              ))}
+            </ul>
+            <hr />
+            <p className="quote">{detailOrQuote}</p>
+          </div>
         </div>
       </div>
     </section>
@@ -70,10 +78,3 @@ const About = () => {
 };
 
 export default About;
-// Compare this snippet from src/Components/Footer.jsx:
-// /**
-//  * Footer component
-//  *
-//  * The footer of your site. This is a great place to add links to your
-//  * social media, GitHub, or other sites.
-//  *
