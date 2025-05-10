@@ -29,7 +29,7 @@ const computerAltText = "computer workstation"; // Update this to describe your 
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I am a web designer and software engineer to be currently studying at Kingston University in the UK. I am passionate about solving problems in new creative ways to drive innovation. I continually look for new and better ways to make tech accessible by all.";
+  "I am a web designer and software engineer currently studying at Kingston University in the UK. I am passionate about solving problems in new creative ways to drive innovation. I continually look for new and better ways to make tech accessible by all.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
